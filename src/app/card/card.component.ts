@@ -9,6 +9,8 @@ import { Course } from '../model/course';
 export class CardComponent {
   @Input() course: Course;
 
+  @Input() cardIndex: number;
+
   // @Output() customEventClicked = new EventEmitter<Course>();
   @Output('customEventClicked') customEventEmitter = new EventEmitter<Course>();
 
