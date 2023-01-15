@@ -2,19 +2,8 @@
 
 <div class="card">
   <app-card
-    [course]="coreCourse"
-    (customEventClicked)="onCustomEventClicked($event)"
-  ></app-card>
-</div>
-<div class="card">
-  <app-card
-    [course]="rxjsCourse"
-    (customEventClicked)="onCustomEventClicked($event)"
-  ></app-card>
-</div>
-<div class="card">
-  <app-card
-    [course]="ngrxCourse"
+    *ngFor="let course of courses"
+    [course]="course"
     (customEventClicked)="onCustomEventClicked($event)"
   ></app-card>
 </div>
