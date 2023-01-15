@@ -1,0 +1,20 @@
+<h1>ANGULAR Component @Output - Custom browser Events and Event emitters</h1>
+
+<div class="card">
+  <app-card
+    [course]="coreCourse"
+    (customEventClicked)="onCustomEventClicked($event)"
+  ></app-card>
+</div>
+<div class="card">
+  <app-card
+    [course]="rxjsCourse"
+    (customEventClicked)="onCustomEventClicked($event)"
+  ></app-card>
+</div>
+<div class="card">
+  <app-card
+    [course]="ngrxCourse"
+    (customEventClicked)="onCustomEventClicked($event)"
+  ></app-card>
+</div>
