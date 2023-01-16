@@ -1,8 +1,8 @@
 <h1>ANGULAR Component @Output - Custom browser Events and Event emitters</h1>
 
-<div class="card">
+<div class="cards">
   <app-card
-    *ngFor="let course of courses; index as i; first as isFirst"
+    *ngFor="let course of courses; index as i; first as isFirst;"
     [cardIndex]="i + 1"
     [class.is-first]="true"
     [course]="course"
