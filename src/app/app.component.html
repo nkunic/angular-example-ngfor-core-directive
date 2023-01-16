@@ -2,8 +2,9 @@
 
 <div class="card">
   <app-card
-    *ngFor="let course of courses; index as i"
+    *ngFor="let course of courses; index as i; first as isFirst"
     [cardIndex]="i + 1"
+    [class.is-first]="true"
     [course]="course"
     (customEventClicked)="onCustomEventClicked($event)"
   ></app-card>
